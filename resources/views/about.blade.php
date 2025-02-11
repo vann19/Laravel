@@ -9,7 +9,9 @@
 </head>
 <body>
     <a href="/">Home</a>
-    <a href="/about">About</a>
+    <a href="/blog">blog</a>
+    <a href="/about">about</a>
+    <a href="/contact">contact</a>
     <h1>Ini halaman about</h1>
     <h3>Bebek {{ $name  }}</h3>
     <img src="img/bebek3.jpg" alt="" width="200">
