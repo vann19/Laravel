@@ -37,13 +37,12 @@ class Post
     // Teknik fungsi callback
     public static function find($slug):array
     {
-        // Teknik fungsi callback
-
-        // return Arr::first(static::all(), function($post) use ($slug) {
-        // return $post['slug'] == $slug;
-        
         // Teknik arrow function
+        $post = Arr::first(static::all(), fn($post) => $post['slug'] == $slug);
 
-        return Arr::first(static::all(), fn($post) => $post['slug'] == $slug);
+        if (! $post) {
+            abort(404);
+        }
+        return $post;
     }
 }
