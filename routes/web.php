@@ -12,7 +12,7 @@ Route::get('/', function () {
 });
 
 Route::get(uri: '/about', action: function () {
-    return view('about',['name' => 'Fansya', 'title' => 'About']);
+    return view('about',['name' => 'Fansya', 'title' => 'About']); 
 });
 
 Route::get(uri: '/posts', action: function () {
